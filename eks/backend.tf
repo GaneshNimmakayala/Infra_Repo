@@ -6,12 +6,7 @@ terraform {
       version = "~> 5.49.0"
     }
   }
-  backend "s3" {
-    bucket         = "mys3backendbucket001"
-    region         = "us-east-1"
-    key            = "terraform.tfstate"
-    dynamodb_table = "LockID"
-  }
+
 }
 
 provider "aws" {
